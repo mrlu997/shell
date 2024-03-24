@@ -2,7 +2,7 @@
 
 ## 通过iStoreOS安装Openclash后，在*插件设置——版本更新*处会显示Clash内核丢失
 
-<img src="[https://photo.maxlu.top/i/2023/07/30/qh8alx.webp](https://github.com/mrlu997/shell/blob/main/core/images/01.png)" alt="images" style="zoom:50%;" />
+<img src="https://github.com/mrlu997/shell/blob/main/core/images/01.png" alt="images" style="zoom:50%;" />
 
 
 ## 此时，路由器尚不能访问外网，因此无法自动更新下载Clash内核，且Github上的Clash内核仓库已经跑路
