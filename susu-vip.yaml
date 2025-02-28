@@ -110,8 +110,47 @@ proxies:
   - {name: 🇸🇬 mm-orsg<aly, server: aly.susuifa.top, port: 10013, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: orm.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
   - {name: 🇸🇬 mm-orsg<tx, server: tx.susuifa.top, port: 10005, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: orm.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
   - {name: 🇸🇬 mm-orsg<tx2, server: tx2.susuifa.top, port: 10002, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: orm.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 su-rn-01, server: rn1.susuifa.top, port: 10001, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 su-rn-02, server: rn2.susuifa.top, port: 10001, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn2.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇰🇷 su-ors-01, server: ors.susuifa.top, port: 10002, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ors.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇭🇰 su-aly-01, server: aly.susuifa.top, port: 10006, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ali3.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇸🇬 su-awsg-01, server: aws.susuifa.top, port: 10006, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: aws.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇸🇬 hou-awsg-01, server: hous.susuifa.top, port: 10005, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hous.susuifa.top, network: ws, ws-opts: {path: /hou}, udp: true}
+  - {name: 🇯🇵 hou-awsj-01, server: houj.susuifa.top, port: 10005, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: houj.susuifa.top, network: ws, ws-opts: {path: /hou}, udp: true}
+  - {name: 🇺🇸 bbl-zen-01, server: zen.susuifa.top, port: 10006, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zen.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 bbl-oru-01, server: orb.susuifa.top, port: 10005, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: orb.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 mm-rn<als, server: als.susuifa.top, port: 10031, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /susu, headers: {Host: rnm.susuifa.top}}, udp: true}
+  - {name: 🇺🇸 mm-rn<tx, server: tx.susuifa.top, port: 10031, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rnm.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 mm-rn<tx2, server: tx2.susuifa.top, port: 10031, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rnm.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 su-rn<als, server: als.susuifa.top, port: 10021, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 su-rn<aly, server: aly.susuifa.top, port: 10022, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 su-rn<tx, server: tx.susuifa.top, port: 10021, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: 🇺🇸 su-rn2<tx2, server: tx2.susuifa.top, port: 10021, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn2.susuifa.top, network: ws, ws-opts: {path: /susu}, udp: true}
+  - {name: H.TW.新北1, type: trojan, server: yqy33115.birpagi.cn, port: 33145, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: H.TW.新北2, type: trojan, server: yqy33116.birpagi.cn, port: 33146, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: I+.TW.新北1, type: trojan, server: yqy33112.birpagi.cn, port: 33142, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: I+.TW.新北2, type: trojan, server: yqy33218.birpagi.cn, port: 33248, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: I.SG.新加坡, type: trojan, server: yqy38115.birpagi.cn, port: 38115, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: I+.SG.新加坡, type: trojan, server: yqy38116.birpagi.cn, port: 38116, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: I.1倍.TW.BGP, type: trojan, server: yqy31262.birpagi.cn, port: 31262, password: 6b302e30-2cd9-370d-a1a1-4c5728f1524e, udp: true, sni: cdn-debian.org, skip-cert-verify: true}
+  - {name: HK 23 HKT, type: vmess, server: gbk.nbnode.com, port: 13301, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: HK 31 商宽, type: vmess, server: gbk.nbnode.com, port: 13341, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: SG 21 SG01, type: vmess, server: gbk.nbnode.com, port: 13316, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: SG 22 SG02, type: vmess, server: gack.nbnode.com, port: 13306, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: TW 21 Hinet, type: vmess, server: gslave.nbnode.com, port: 13304, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: TW 22 TFN, type: vmess, server: ghive.nbnode.com, port: 13304, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: V-AR 阿根廷x2, type: vmess, server: gbk.nbnode.com, port: 13357, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: V-TR 土耳其, type: vmess, server: gbk.nbnode.com, port: 13347, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: 以下备用|流量少, server: cfw.susuifa.top, port: 2096, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /susu, headers: {Host: rn1.susuifa.top}}, udp: true}
+  - {name: 🇭🇰✈香港1, type: ss, server: MY.HUY.OVH, port: 39101, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
+  - {name: 🇭🇰✈香港2, type: ss, server: MY.HUY.OVH, port: 39102, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
+  - {name: 🇨🇳✈台湾1, type: ss, server: MY.HUY.OVH, port: 39103, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
+  - {name: 🇯🇵✈日本1, type: ss, server: MY.HUY.OVH, port: 39104, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
+  - {name: 🇸🇬✈新加坡1, type: ss, server: MY.HUY.OVH, port: 39105, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
+  - {name: 🇹🇭✈泰国1, type: ss, server: MY.HUY.OVH, port: 39116, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
+  - {name: 🇻🇳✈越南1, type: ss, server: MY.HUY.OVH, port: 39117, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
 proxy-groups:
-  - name: Proxy
+  - name: 🔰 Proxy
     type: select
     proxies:
       - 🇺🇸 su-rn-vmc
@@ -127,6 +166,167 @@ proxy-groups:
       - 🇸🇬 mm-orsg<aly
       - 🇸🇬 mm-orsg<tx
       - 🇸🇬 mm-orsg<tx2
+      - 🔰 susul
+      - 🔰 机场
+  - name: 🔰 susul
+    type: select
+    proxies:
+      - 🇺🇸 su-rn-01
+      - 🇺🇸 su-rn-02
+      - 🇰🇷 su-ors-01
+      - 🇭🇰 su-aly-01
+      - 🇸🇬 su-awsg-01
+      - 🇸🇬 hou-awsg-01
+      - 🇯🇵 hou-awsj-01
+      - 🇺🇸 bbl-zen-01
+      - 🇺🇸 bbl-oru-01
+      - 🇺🇸 mm-rn<als
+      - 🇺🇸 mm-rn<tx
+      - 🇺🇸 mm-rn<tx2
+      - 🇺🇸 su-rn<als
+      - 🇺🇸 su-rn<aly
+      - 🇺🇸 su-rn<tx
+      - 🇺🇸 su-rn2<tx2
+  - name: 🔰 机场
+    type: select
+    proxies:
+      - H.TW.新北1
+      - H.TW.新北2
+      - I+.TW.新北1
+      - I+.TW.新北2
+      - I.SG.新加坡
+      - I+.SG.新加坡
+      - I.1倍.TW.BGP
+      - HK 23 HKT
+      - HK 31 商宽
+      - SG 21 SG01
+      - SG 22 SG02
+      - TW 21 Hinet
+      - TW 22 TFN
+      - V-AR 阿根廷x2
+      - V-TR 土耳其
+      - 以下备用|流量少
+      - 🇭🇰✈香港1
+      - 🇭🇰✈香港2
+      - 🇨🇳✈台湾1
+      - 🇯🇵✈日本1
+      - 🇸🇬✈新加坡1
+      - 🇹🇭✈泰国1
+      - 🇻🇳✈越南1
+  - name: 📺 Emby
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 📱 Telegram
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 📽 Netflix
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 📺 Disney+
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 🎬 YouTube
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: ⚛️ ChatGPT
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 📺 Bilibili
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 📺 动画疯
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 机场
+  - name: 📺 Spotify
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: Ⓜ Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 🌎 全球代理
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 🎯 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - 🔰 susul
+      - 🔰 机场
+      - DIRECT
+rule-providers:
+  SteamCN: { type: http, behavior: classical, path: ./providers/rule/Games/SteamCN.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/SteamCN.yaml, interval: 21600 }
+  Unbreak: { type: http, behavior: classical, path: ./providers/ruleUnbreak.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Unbreak.yaml, interval: 21600 }
+  Advertising: { type: http, behavior: classical, path: ./providers/ruleAdvertising.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Guard/Advertising.yaml, interval: 21600 }
+  Hijacking: { type: http, behavior: classical, path: ./providers/ruleHijacking.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Guard/Hijacking.yaml, interval: 21600 }
+  Privacy: { type: http, behavior: classical, path: ./providers/rulePrivacy.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Guard/Privacy.yaml, interval: 21600 }
+  Steam: { type: http, behavior: classical, path: ./providers/ruleGames/Steam.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Steam.yaml, interval: 21600 }
+  Blizzard: { type: http, behavior: classical, path: ./providers/rule/Games/Blizzard.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Extra/Game/Blizzard.yaml, interval: 21600 }
+  Nintendo: { type: http, behavior: classical, path: ./providers/ruleGames/Nintendo.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Extra/Game/Nintendo.yaml, interval: 21600 }
+  Origin: { type: http, behavior: classical, path: ./providers/ruleGames/Origin.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Extra/Game/Origin.yaml, interval: 21600 }
+  Xbox: { type: http, behavior: classical, path: ./providers/ruleGames/Xbox.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Extra/Game/Xbox.yaml, interval: 21600 }
+  Epic: { type: http, behavior: classical, path: ./providers/ruleGames/Epic.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Epic.yaml, interval: 21600 }
+  Apple: { type: http, behavior: classical, path: ./providers/ruleApple.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Apple.yaml, interval: 21600 }
+  Telegram: { type: http, behavior: classical, path: ./providers/ruleTelegram.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Telegram.yaml, interval: 21600 }
+  Microsoft: { type: http, behavior: classical, path: ./providers/ruleMicrosoft.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Microsoft.yaml, interval: 21600 }
+  Bilibili: { type: http, behavior: classical, path: ./providers/ruleBilibili.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Bilibili.yaml, interval: 21600 }
+  YouTube: { type: http, behavior: classical, path: ./providers/ruleYouTube.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/YouTube.yaml, interval: 21600 }
+  Netflix: { type: http, behavior: classical, path: ./providers/ruleNetflix.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/Netflix.yaml, interval: 21600 }
+  Disney: { type: http, behavior: classical, path: ./providers/ruleDisney.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/Ruleset/DisneyPlus.yaml, interval: 21600 }
+  Bahamut: { type: http, behavior: classical, path: ./providers/ruleBahamut.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/StreamingMedia/Video/Bahamut.yaml, interval: 21600 }
+  ProxyMedia: { type: http, behavior: classical, path: ./providers/ruleProxyMedia.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/ProxyMedia.yaml, interval: 21600 }
+  ProxyGFWlist: { type: http, behavior: classical, path: ./providers/ruleProxyGFWlist.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/ProxyGFWlist.yaml, interval: 21600 }
+  Global: { type: http, behavior: classical, path: ./providers/ruleGlobal.yaml, url: http://154.17.13.205:32580/Clash/RuleSet/Global.yaml, interval: 21600 }
+  ChinaDomain: { type: http, behavior: classical, path: ./providers/ruleChinaDomain.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/ChinaDomain.yaml, interval: 21600 }
+  ChinaIp: { type: http, behavior: ipcidr, path: ./providers/ruleChinaIp.yaml, url: http://154.17.13.205:32580/ACL4SSR/Clash/Providers/ChinaIp.yaml, interval: 21600 }
 rules:
   - RULE-SET,SteamCN,DIRECT
   - DOMAIN-KEYWORD,charontv,📺 Emby
