@@ -139,7 +139,7 @@ proxies:
   - {name: SG 22 SG02, type: vmess, server: gack.nbnode.com, port: 13306, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
   - {name: TW 21 Hinet, type: vmess, server: gslave.nbnode.com, port: 13304, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
   - {name: TW 22 TFN, type: vmess, server: ghive.nbnode.com, port: 13304, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
-  - {name: V-AR 阿根廷x2, type: vmess, server: gbk.nbnode.com, port: 13357, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
+  - {name: V-AR 阿根廷, type: vmess, server: gbk.nbnode.com, port: 13357, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
   - {name: V-TR 土耳其, type: vmess, server: gbk.nbnode.com, port: 13347, uuid: 44aa4e4f-87d3-3ed7-b3c2-0448380e6ccf, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: {path: /th, headers: {Host: 10.5.96.3}}, ws-path: /th, ws-headers: {Host: 10.5.96.3}}
   - {name: 以下备用|流量少, server: cfw.susuifa.top, port: 2096, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /susu, headers: {Host: rn1.susuifa.top}}, udp: true}
   - {name: 🇭🇰✈香港1, type: ss, server: MY.HUY.OVH, port: 39101, cipher: aes-256-gcm, password: 69b830e8-fc84-47ba-b328-0aa9c356513f, udp: true }
@@ -203,7 +203,7 @@ proxy-groups:
       - SG 22 SG02
       - TW 21 Hinet
       - TW 22 TFN
-      - V-AR 阿根廷x2
+      - V-AR 阿根廷
       - V-TR 土耳其
       - 以下备用|流量少
       - 🇭🇰✈香港1
