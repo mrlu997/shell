@@ -1,0 +1,198 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: error
+find-process-mode: strict
+keep-alive-interval: 300
+unified-delay: true
+external-controller: '127.0.0.1:9090'
+sniffer:
+    enable: true
+    force-dns-mapping: true
+    parse-pure-ip: true
+    override-destination: true
+    sniff: { HTTP: { ports: [80, 8080-8880], override-destination: true }, TLS: { ports: [443, 8443] }, QUIC: { ports: [443, 8443] } }
+    force-domain: [+.v2ex.com]
+    skip-domain: ['Mijia Cloud']
+    skip-src-address: [192.168.0.3/32]
+    skip-dst-address: [192.168.0.3/32]
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: ['tcp://223.5.5.5', 'tls://223.5.5.5', 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter: ['*.lan']
+    nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
+proxies:
+  - {name: 🇯🇵 tokyo-hou, server: houj.susuifa.top, port: 10010, type: vmess, uuid: 10cd2230-05a4-42f3-882d-b27c3b766f31, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: houj.susuifa.top, network: ws, ws-opts: {path: /hou}, udp: true}
+  - {name: 🇺🇸 westus, server: vmess.milaa.cf, port: 10086, type: vmess, uuid: 52ce5f7a-a3fe-4bc8-c24c-2303c2aec26f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: vmess.milaa.cf}}, udp: true}
+proxy-groups:
+  - name: 🔰 Proxy
+    type: select
+    proxies:
+      - 🇯🇵 tokyo-hou
+      - 🇺🇸 westus
+  - name: 📺 Emby
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+  - name: 📱 Telegram
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - DIRECT
+  - name: 📽 Netflix
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 📺 Disney+
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 📺 HBO
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 📺 PrimeVideo
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 🎬 YouTube
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: ⚛️ Ai+
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 📺 Bilibili
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+  - name: 📺 动画疯
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 📺 Spotify
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: Ⓜ Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+  - name: 🌎 全球代理
+    type: select
+    proxies:
+      - 🔰 Proxy
+  - name: 🎯 游戏平台+
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - DIRECT
+rule-providers:
+  Local-LAN: { type: http, behavior: classical, path: ./providers/rule/Local-LAN.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Special/Local-LAN.yaml, interval: 21600 }
+  OpenAI: { type: http, behavior: classical, path: ./providers/rule/OpenAI.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/PROXY/OpenAI.yaml, interval: 21600 }
+  Gemini: { type: http, behavior: classical, path: ./providers/rule/Gemini.yaml, url: https://wechat.sslinks.co.in/ACL4SSR/Clash/Providers/Ruleset/Gemini.yaml, interval: 21600 }
+  Claude: { type: http, behavior: classical, path: ./providers/rule/Claude.yaml, url: https://wechat.sslinks.co.in/ACL4SSR/Clash/Providers/Ruleset/Claude.yaml, interval: 21600 }
+  Apple: { type: http, behavior: classical, path: ./providers/rule/AppleDev.yaml, url: https://wechat.sslinks.co.in/ACL4SSR/Clash/Providers/Ruleset/Apple.yaml, interval: 21600 }
+  Telegram: { type: http, behavior: classical, path: ./providers/rule/Telegram.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/PROXY/Telegram.yaml, interval: 21600 }
+  Netflix: { type: http, behavior: classical, path: ./providers/rule/Netflix.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/Netflix.yaml, interval: 21600 }
+  Disney: { type: http, behavior: classical, path: ./providers/rule/Disney.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/Disney.yaml, interval: 21600 }
+  HBO: { type: http, behavior: classical, path: ./providers/rule/HBO.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/HBO.yaml, interval: 21600 }
+  Bahamut: { type: http, behavior: classical, path: ./providers/rule/Bahamut.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/Bahamut.yaml, interval: 21600 }
+  TikTok: { type: http, behavior: classical, path: ./providers/rule/TikTok.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/TikTok.yaml, interval: 21600 }
+  PrimeVideo: { type: http, behavior: classical, path: ./providers/rule/AmazonPrimeVideo.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/AmazonPrimeVideo.yaml, interval: 21600 }
+  YouTube: { type: http, behavior: classical, path: ./providers/rule/YouTube.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/YouTube.yaml, interval: 21600 }
+  Microsoft: { type: http, behavior: classical, path: ./providers/rule/Microsoft.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Microsoft.yaml, interval: 21600 }
+  Bilibili: { type: http, behavior: classical, path: ./providers/rule/BiliBiliHMT.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Global-Services/BiliBiliHMT.yaml, interval: 21600 }
+  SteamCN: { type: http, behavior: classical, path: ./providers/rule/Games/SteamCN.yaml, url: https://wechat.sslinks.co.in/ACL4SSR/Clash/Providers/Ruleset/SteamCN.yaml, interval: 21600 }
+  Steam: { type: http, behavior: classical, path: ./providers/rule/Games/Steam.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Steam.yaml, interval: 21600 }
+  Blizzard: { type: http, behavior: classical, path: ./providers/rule/Games/Blizzard.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Blizzard.yaml, interval: 21600 }
+  EA: { type: http, behavior: classical, path: ./providers/rule/Games/EA.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/EA.yaml, interval: 21600 }
+  Epicgames: { type: http, behavior: classical, path: ./providers/rule/Games/Epicgames.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Epicgames.yaml, interval: 21600 }
+  Garena: { type: http, behavior: classical, path: ./providers/rule/Games/Garena.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Garena.yaml, interval: 21600 }
+  Gog: { type: http, behavior: classical, path: ./providers/rule/Games/Gog.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Gog.yaml, interval: 21600 }
+  HoYoverse: { type: http, behavior: classical, path: ./providers/rule/Games/HoYoverse.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/HoYoverse.yaml, interval: 21600 }
+  Nintendo: { type: http, behavior: classical, path: ./providers/rule/Games/Nintendo.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Nintendo.yaml, interval: 21600 }
+  OP: { type: http, behavior: classical, path: ./providers/rule/Games/OP.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/OP.yaml, interval: 21600 }
+  PlayStation: { type: http, behavior: classical, path: ./providers/rule/Games/PlayStation.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/PlayStation.yaml, interval: 21600 }
+  Riot: { type: http, behavior: classical, path: ./providers/rule/Games/Riot.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Riot.yaml, interval: 21600 }
+  Rockstar: { type: http, behavior: classical, path: ./providers/rule/Games/Rockstar.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Rockstar.yaml, interval: 21600 }
+  Xbox: { type: http, behavior: classical, path: ./providers/rule/Games/Xbox.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Game/Xbox.yaml, interval: 21600 }
+  GlobalMedia: { type: http, behavior: classical, path: ./providers/rule/GlobalMedia.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/GlobalMedia.yaml, interval: 21600 }
+  PROXY: { type: http, behavior: classical, path: ./providers/rule/Proxy.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/PROXY.yaml, interval: 21600 }
+  Domestic: { type: http, behavior: classical, path: ./providers/rule/Domestic.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/Domestic.yaml, interval: 21600 }
+  CN-IP-ipcidr: { type: http, behavior: ipcidr, path: ./providers/rule/CN-IP-ipcidr.yaml, url: https://wechat.sslinks.co.in/Rules/Clash-RuleSet-Classical/CN-IP-ipcidr.yaml, interval: 21600 }
+  Spotify: { type: http, behavior: classical, path: ./providers/rule/Games/Spotify.yaml, url: http://120.78.128.70:9184/api/public/dl/OJ2JUknB/sub/Spotify.yaml, interval: 21600 }
+rules:
+  - DOMAIN-KEYWORD,odysseyplus,📺 Emby
+  - DOMAIN-SUFFIX,ii00.cc,📺 Emby
+  - RULE-SET,Spotify,📺 Spotify
+  - 'DOMAIN-SUFFIX,cm.steampowered.com,DIRECT'
+  - 'DOMAIN-SUFFIX,steamserver.net,DIRECT'
+  - 'DOMAIN-SUFFIX,steamcontent.com,DIRECT'
+  - 'DOMAIN-SUFFIX,v.smtcdns.net,DIRECT'
+  - 'DOMAIN-SUFFIX,snssdk.com,DIRECT'
+  - 'DOMAIN-SUFFIX,playstation.net,DIRECT'
+  - 'DOMAIN-SUFFIX,cnlang.org,DIRECT'
+  - 'DOMAIN-SUFFIX,atlassian.com,DIRECT'
+  - 'DOMAIN-SUFFIX,download.parallels.com,DIRECT'
+  - 'DOMAIN-SUFFIX,services.googleapis.cn,🌎 全球代理'
+  - 'RULE-SET,Local-LAN,DIRECT'
+  - 'RULE-SET,SteamCN,DIRECT'
+  - 'RULE-SET,Netflix,📽 Netflix'
+  - 'RULE-SET,Disney,📺 Disney+'
+  - 'RULE-SET,HBO,📺 HBO'
+  - 'DOMAIN-SUFFIX,discomax.com,📺 HBO'
+  - 'DOMAIN-SUFFIX,brightline.tv,📺 HBO'
+  - 'RULE-SET,Bahamut,📺 动画疯'
+  - 'RULE-SET,YouTube,🎬 YouTube'
+  - 'RULE-SET,PrimeVideo,📺 PrimeVideo'
+  - 'RULE-SET,Bilibili,📺 Bilibili'
+  - 'RULE-SET,OpenAI,⚛️ Ai+'
+  - 'RULE-SET,Gemini,⚛️ Ai+'
+  - 'RULE-SET,Claude,⚛️ Ai+'
+  - 'DOMAIN-SUFFIX,poe.com,⚛️ Ai+'
+  - 'DOMAIN-SUFFIX,perplexity.ai,⚛️ Ai+'
+  - 'DOMAIN-SUFFIX,trae-api-sg.mchost.guru,⚛️ Ai+'
+  - 'DOMAIN-SUFFIX,trae.ai,⚛️ Ai+'
+  - 'RULE-SET,Microsoft,Ⓜ Microsoft'
+  - 'RULE-SET,Apple,🍎 Apple'
+  - 'RULE-SET,Telegram,📱 Telegram'
+  - 'RULE-SET,Steam,🎯 游戏平台+'
+  - 'RULE-SET,Blizzard,🎯 游戏平台+'
+  - 'RULE-SET,Nintendo,🎯 游戏平台+'
+  - 'RULE-SET,EA,🎯 游戏平台+'
+  - 'RULE-SET,Xbox,🎯 游戏平台+'
+  - 'RULE-SET,Epicgames,🎯 游戏平台+'
+  - 'RULE-SET,Garena,🎯 游戏平台+'
+  - 'RULE-SET,Gog,🎯 游戏平台+'
+  - 'RULE-SET,HoYoverse,🎯 游戏平台+'
+  - 'RULE-SET,OP,🎯 游戏平台+'
+  - 'RULE-SET,PlayStation,🎯 游戏平台+'
+  - 'RULE-SET,Riot,🎯 游戏平台+'
+  - 'RULE-SET,Rockstar,🎯 游戏平台+'
+  - 'RULE-SET,TikTok,🌎 全球代理'
+  - 'RULE-SET,GlobalMedia,🌎 全球代理'
+  - 'RULE-SET,PROXY,🌎 全球代理'
+  - 'RULE-SET,Domestic,DIRECT'
+  - 'RULE-SET,CN-IP-ipcidr,DIRECT'
+  - 'GEOIP,LAN,DIRECT'
+  - 'GEOIP,CN,DIRECT'
+  - 'MATCH,🐟 漏网之鱼'
