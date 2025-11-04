@@ -26,13 +26,13 @@ dns:
     fake-ip-filter: ['*.lan']
     nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 proxies:
-  - {name: 🇯🇵 tokyo-arm, server: tokyo.milaa.cf, port: 10088, type: vmess, uuid: 5e0bb3a1-5236-43f2-c8b0-58b25b7f36f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: tokyo.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 tokyoo, server: tokyo.milaa.cf, port: 10088, type: vmess, uuid: 5e0bb3a1-5236-43f2-c8b0-58b25b7f36f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: tokyo.milaa.cf}}, udp: true}
   - {name: 🇺🇸 westus, server: vmess.milaa.cf, port: 10086, type: vmess, uuid: 52ce5f7a-a3fe-4bc8-c24c-2303c2aec26f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: vmess.milaa.cf}}, udp: true}
 proxy-groups:
   - name: 🔰 Proxy
     type: select
     proxies:
-      - 🇯🇵 tokyo-arm
+      - 🇯🇵 tokyoo
       - 🇺🇸 westus
   - name: 📺 Emby
     type: select
