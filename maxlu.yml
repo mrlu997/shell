@@ -28,8 +28,7 @@ dns:
 proxies:
   - {name: 🇯🇵 tokyoo, server: tokyo.milaa.cf, port: 10088, type: vmess, uuid: 5e0bb3a1-5236-43f2-c8b0-58b25b7f36f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: tokyo.milaa.cf}}, udp: true}
   - {name: 🇺🇸 westus, server: vmess.milaa.cf, port: 10086, type: vmess, uuid: 52ce5f7a-a3fe-4bc8-c24c-2303c2aec26f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: vmess.milaa.cf}}, udp: true}
-  - {name: 🇺🇸 phoenix-1, server: phoenix.milaa.cf, port: 10086, type: vmess, uuid: f64959b5-b926-4dad-a025-b9750012ed62, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happ, headers: {Host: phoenix.milaa.cf}}, udp: true}
-  - {name: 🇺🇸 phoenix-vc, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 82ae071f-e785-4631-979b-089eb10f539d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: phoenix.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: phoenix.milaa.cf}}, udp: true}
+  - {name: 🇺🇸 phoenix-1, server: phoenix.milaa.cf, port: 10086, type: vmess, uuid: 82ae071f-e785-4631-979b-089eb10f539d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: phoenix.milaa.cf}}, udp: true}
 proxy-groups:
   - name: 🔰 Proxy
     type: select
@@ -37,7 +36,6 @@ proxy-groups:
       - 🇯🇵 tokyoo
       - 🇺🇸 westus
       - 🇺🇸 phoenix-1
-      - 🇺🇸 phoenix-vc
   - name: 📺 Emby
     type: select
     proxies:
