@@ -26,7 +26,6 @@ dns:
     fake-ip-filter: ['*.lan']
     nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 proxies:
-  - {name: 🇯🇵 tokyoo, server: tokyo.milaa.cf, port: 10088, type: vmess, uuid: 5e0bb3a1-5236-43f2-c8b0-58b25b7f36f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: tokyo.milaa.cf}}, udp: true}
   - {name: 🇯🇵 tokyoo-telecom, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 4face269-fd92-412d-cc70-6e9d5d614c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyo.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: tokyo.milaa.cf}}, udp: true}
   - {name: 🇯🇵 tokyoo-unicom, server: unicom.fastpan.tk, port: 2053, type: vmess, uuid: 4face269-fd92-412d-cc70-6e9d5d614c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyo.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: tokyo.milaa.cf}}, udp: true}
   - {name: 🇯🇵 Osaka-telecom, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 47a5c739-219d-4191-fd5e-ddfbae0d0242, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: osaka.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: osaka.milaa.cf}}, udp: true}
@@ -41,7 +40,6 @@ proxy-groups:
   - name: 🔰 Proxy
     type: select
     proxies:
-      - 🇯🇵 tokyoo
       - 🇯🇵 tokyoo-telecom
       - 🇯🇵 tokyoo-unicom
       - 🇯🇵 Osaka-telecom
