@@ -27,25 +27,31 @@ dns:
     nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 proxies:
   - {name: 🇯🇵 tokyoo, server: tokyo.milaa.cf, port: 10088, type: vmess, uuid: 5e0bb3a1-5236-43f2-c8b0-58b25b7f36f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: tokyo.milaa.cf}}, udp: true}
-  - {name: 🇯🇵 tokyoo-vc, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 4face269-fd92-412d-cc70-6e9d5d614c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyo.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: tokyo.milaa.cf}}, udp: true}
-  - {name: 🇯🇵 Osaka-vc, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 47a5c739-219d-4191-fd5e-ddfbae0d0242, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: osaka.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: osaka.milaa.cf}}, udp: true}
-  - {name: 🇯🇵 Osaka-test1, server: dns.fastpan.tk, port: 2053, type: vmess, uuid: 47a5c739-219d-4191-fd5e-ddfbae0d0242, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: osaka.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: osaka.milaa.cf}}, udp: true}
-  - {name: 🇯🇵 tokyoamd-vc, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 7bdf2530-96a1-4dad-a929-c0948abb4e81, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyoamd.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: tokyoamd.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 tokyoo-telecom, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 4face269-fd92-412d-cc70-6e9d5d614c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyo.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: tokyo.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 tokyoo-unicom, server: unicom.fastpan.tk, port: 2053, type: vmess, uuid: 4face269-fd92-412d-cc70-6e9d5d614c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyo.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: tokyo.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 Osaka-telecom, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 47a5c739-219d-4191-fd5e-ddfbae0d0242, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: osaka.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: osaka.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 Osaka-unicom, server: unicom.fastpan.tk, port: 2053, type: vmess, uuid: 47a5c739-219d-4191-fd5e-ddfbae0d0242, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: osaka.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: osaka.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 tokyoamd-telecom, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 7bdf2530-96a1-4dad-a929-c0948abb4e81, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyoamd.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: tokyoamd.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 tokyoamd-unicom, server: unicom.fastpan.tk, port: 2053, type: vmess, uuid: 7bdf2530-96a1-4dad-a929-c0948abb4e81, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tokyoamd.milaa.cf, network: ws, ws-opts: {path: /happy, headers: {Host: tokyoamd.milaa.cf}}, udp: true}
   - {name: 🇺🇸 westus, server: vmess.milaa.cf, port: 10086, type: vmess, uuid: 52ce5f7a-a3fe-4bc8-c24c-2303c2aec26f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: vmess.milaa.cf}}, udp: true}
   - {name: 🇺🇸 phoenix-1, server: phoenix.milaa.cf, port: 10086, type: vmess, uuid: 82ae071f-e785-4631-979b-089eb10f539d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: phoenix.milaa.cf}}, udp: true}
-  - {name: 🇺🇸 phoenix-vc, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 60d19cc3-ae5d-4ec9-c9a4-b8cd8cb27aba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: phoenix.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: phoenix.milaa.cf}}, udp: true}
+  - {name: 🇺🇸 phoenix-telecom, server: cf.susuifa.top, port: 2053, type: vmess, uuid: 60d19cc3-ae5d-4ec9-c9a4-b8cd8cb27aba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: phoenix.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: phoenix.milaa.cf}}, udp: true}
+  - {name: 🇺🇸 phoenix-unicom, server: unicom.fastpan.tk, port: 2053, type: vmess, uuid: 60d19cc3-ae5d-4ec9-c9a4-b8cd8cb27aba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: phoenix.milaa.cf, network: ws, ws-opts: {path: /happ, headers: {Host: phoenix.milaa.cf}}, udp: true}
 proxy-groups:
   - name: 🔰 Proxy
     type: select
     proxies:
       - 🇯🇵 tokyoo
-      - 🇯🇵 tokyoo-vc
-      - 🇯🇵 Osaka-vc
-      - 🇯🇵 Osaka-test1
-      - 🇯🇵 tokyoamd-vc
+      - 🇯🇵 tokyoo-telecom
+      - 🇯🇵 tokyoo-unicom
+      - 🇯🇵 Osaka-telecom
+      - 🇯🇵 Osaka-unicom
+      - 🇯🇵 tokyoamd-telecom
+      - 🇯🇵 tokyoamd-unicom
       - 🇺🇸 westus
       - 🇺🇸 phoenix-1
-      - 🇺🇸 phoenix-vc
+      - 🇺🇸 phoenix-telecom
+      - 🇺🇸 phoenix-unicom
   - name: 📺 Emby
     type: select
     proxies:
