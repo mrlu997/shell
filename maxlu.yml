@@ -37,6 +37,7 @@ proxies:
   - {name: 🇺🇸 phoenix-1, server: phoenix.milaa.cf, port: 10086, type: vmess, uuid: 82ae071f-e785-4631-979b-089eb10f539d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: phoenix.milaa.cf}}, udp: true}
   - {name: 🇺🇸 westus, server: vmess.milaa.cf, port: 10086, type: vmess, uuid: 52ce5f7a-a3fe-4bc8-c24c-2303c2aec26f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: vmess.milaa.cf}}, udp: true}
   - {name: 🇯🇵 Plex-az, server: plex.milaa.cf, port: 10086, type: vmess, uuid: dbe932d0-cfef-48c9-d6e1-0dbf86564921, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: plex.milaa.cf}}, udp: true}
+  - {name: 🇯🇵 child-tokyo, server: child.milaa.cf, port: 11186, type: vmess, uuid: 787ba41f-5d31-4754-88c0-43f6c0a0cea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /happy, headers: {Host: child.milaa.cf}}, udp: true}
 proxy-groups:
   - name: 🔰 Proxy
     type: select
@@ -52,6 +53,7 @@ proxy-groups:
       - 🇺🇸 phoenix-1
       - 🇺🇸 westus
       - 🇯🇵 Plex-az
+      - 🇯🇵 child-tokyo
   - name: 📺 Emby
     type: select
     proxies:
