@@ -40,13 +40,10 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 tokyooArm-telecom
-      - 🇯🇵 tokyooArm-unicom
       - 🇯🇵 tokyooArm
       - 🇯🇵 tokyoamd2-telecom
-      - 🇯🇵 tokyoamd2-unicom
       - 🇯🇵 tokyoamd2
       - 🇺🇸 phoenix-telecom
-      - 🇺🇸 phoenix-unicom
       - 🇺🇸 phoenix-1
       - 🇺🇸 westus
       - 🇯🇵 Plex-az
